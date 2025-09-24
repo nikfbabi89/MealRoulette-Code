@@ -14,11 +14,9 @@ def main():
     while True:
         print("\n--- MVP Menu ---")
         print("1. Spin Meal Roulette")
-        print("2. Post a Study Problem")
-        print("3. Reply to a Problem")
-        print("4. Show Study Feed")
+    
         print("5. Exit")
-
+        
         choice = input("Choose an option: ")
 
         if choice == "1":
