@@ -1,12 +1,8 @@
 # MealRoulette-Code
 import random
 
-# Simple data storage for StudyLoop
-feed = []
-
-# -------------------------
 # Meal Roulette
-# -------------------------
+
 def meal_roulette():
     meals = ["Pizza", "Pasta", "Burrito", "Salad", "Sushi"]
     choice = random.choice(meals)
