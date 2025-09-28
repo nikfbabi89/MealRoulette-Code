@@ -1,0 +1,75 @@
+# Meal Roulette
+# Created by MCCNH TechAction Group 1 on 9/22/25 MDY
+# Version Number 1
+
+# Note:
+
+import json
+
+# ----- Sample JSON Data -----
+JsonData = """
+{
+  "UserConfig": {
+    "Username": "TstUsr"
+  },
+  "Meals": [
+    {
+      "Name": "Popcorn",
+      "PrepTime": 5,
+      "Type": ["Snack"],
+      "Ingredients": ["Corn", "Salt", "Oil"],
+      "CustomFilters": ["Quick"]
+    },
+    {
+      "Name": "Tacos",
+      "PrepTime": 10,
+      "Type": ["Lunch", "Dinner"],
+      "Ingredients": ["Tortilla", "Beef", "Cheese", "Lettuce"],
+      "CustomFilters": ["Quick"]
+    },
+    {
+      "Name": "Hamburger",
+      "PrepTime": 15,
+      "Type": ["Lunch", "Dinner"],
+      "Ingredients": ["Bun", "Beef", "Lettuce", "Tomato"],
+      "CustomFilters": ["Grill"]
+    },
+    {
+      "Name": "Ham Sandwich",
+      "PrepTime": 5,
+      "Type": ["Lunch"],
+      "Ingredients": ["Bread", "Ham"],
+      "CustomFilters": ["Quick"]
+    },
+    {
+      "Name": "Turkey Sandwich",
+      "PrepTime": 5,
+      "Type": ["Lunch"],
+      "Ingredients": ["Bread", "Turkey"],
+      "CustomFilters": ["Quick", "Turkey"]
+    },
+    {
+      "Name": "Soup",
+      "PrepTime": 30,
+      "Type": ["Lunch", "Dinner"],
+      "Ingredients": ["Water", "Vegetables", "Seasoning"],
+      "CustomFilters": ["Boil"]
+    },
+    {
+      "Name": "Pizza",
+      "PrepTime": 20,
+      "Type": ["Dinner"],
+      "Ingredients": ["Dough", "Cheese", "Tomato Sauce"],
+      "CustomFilters": ["Oven"]
+    },
+    {
+      "Name": "Hot Dogs",
+      "PrepTime": 5,
+      "Type": ["Lunch"],
+      "Ingredients": ["Hot Dog Bun", "Sausage", "Condiments"],
+      "CustomFilters": ["Quick"]
+    }
+
+  ]
+}
+"""
