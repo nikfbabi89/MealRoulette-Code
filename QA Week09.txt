@@ -1,0 +1,84 @@
+QA Report:
+
+Version October 9 Project File (from Slack)
+
+Issues:
+
+1. Duplicates added to "Selected Meals"
+Clicking on the "Meals List" column on a singular item multiple times will add again the meal into the "Selected Meals" column
+
+Expected result: 
+A) Clicking on a meal from the "Meals List" should remove the entry from "Meals List" and add an entry to "Selected Meals"
+B) Clicking on a meal from "Meals List" should add the entry to "Selected Meals" and provide some feedback that its been selected, such as a highlight. Clicking again should perform no additional changes
+
+2. "Filtered Meals show up in Selected Meals"
+Clicking on an entry to add to "Selected Meals" from "Meals List" and then right-clicking to "filter that meal out" continues to show the entry on the "Selected Meals"
+
+Expected result:
+Right-clicking on an entry should also temporarily remove the item from "Selected meals"
+
+3. Using arrow keys does not update the "Info Box"
+Info box is only updated when a meal is added to the "Selected Meals".
+
+Expected result:
+Whatever is currently highlighted should be on the info box. Clicking on Popcorn and then using the downarrow so the highlight is on Tacos should have the info box show the Tacos information
+
+4. There is no "reset" button
+
+Expected result:
+A "reset" button to quickly remove all selected meals and start again
+
+5. Info Box incorrect information *Randomized
+There is extraneous information that should not be shown
+
+6. Info Box Misnamed "Id's"
+Id's should be renamed to "Tag"
+Current:
+Popcorn
+ID's['Snack']['Quick']
+Expected:
+Popcorn
+Tags[Snack][Quick]
+
+7. Info Box Formatting
+7.1) Quotations should be removed when possible
+7.2) [Brackets] should be 1 per attribute
+Example Current for Popcorn:
+Ingredients: ['Corn', 'Salt', 'Oil']
+Id's['Snack'] ['Quick']
+Expected for Popcorn:
+Ingredients: [Corn] [Salt] [Oil]
+Id's[Snack] [Quick]
+
+8. Filters are seperate and cumbersome
+Filters are needed to be applied in a seperate tab. There is no feedback on the mainscreen for what filters are applied. There is indication of what meals are available for selection (the "Selected Meals" is empty and does not populate when filters are added")
+
+9. Unable to add new meals
+
+10. Unable to edit meals
+
+11. Unable to delete meals
+
+12. Time Filter is not present
+
+13. Filters are not re-arrangeable
+They are also not alphabetized OR grouped by category
+
+14. Roulette is not showing what meals were available for selection
+Select no meals, and apply no filters. Randomizer will show a random meal. It does not show what meals were available for selection or which ones were not available for selection
+
+15. UX - Instructions
+Instructions should be line by line for each "function"
+Current:
+"Left click an entry in the Meal List to select it. Right click while selected to filter that meal out, do this again to undo toggle. Left click it in the Selected Meals List to remove it from your listed meals. Use tabs to navigate to the filter screen"
+Expected:
+Left click an entry in the Meal List to select it
+Left click it in the Selected Meals List to remove it from your listed meals
+Right click while selected to filter that meal out, do this again to undo toggle
+Use tabs to navigate to the filter screen"
+
+16. Filters tab - Duplicates
+Clicking a filter can be added multiple times when added to Whitelist or Blacklist
+
+17. Filters tab - Logical error
+Filter can both be a whitelist and blacklist
