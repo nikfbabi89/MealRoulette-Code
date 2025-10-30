@@ -1,0 +1,35 @@
+[Example A] - Meal Info Viewing (see preptime, status, etc)
+[Example B] - How to edit, add, delete
+[Question C] - Will Filters automatically fetch all [tags] and have them available?
+
+Overview
+Meal Roulette is designed to help users randomly select meals from their personal list. It allows users to categorize meals through a [tag] system and mass filter meals into the possible selection in an easy and intuitive way.
+
+The basic flow process is
+0) Edit meals
+1) Apply Filters
+2) Spin
+3) View Meal
+
+Step 0: Acquire App and Dependencies
+Python application will require python enviromrent to run. This envirorment can be ran via Jupyter Notebooks or any normal python enviroment.
+
+Step 1: Starting the App
+We begin by launching the application. The application has a main "driver" that when executed will perform all other necessary steps. A small default selection of meals comes with the app to help guide users into their expected usage.
+
+Step 2: Meals
+Next, we can view all the meals currently available. Each meal can have all of its info viewed by doing [Example A]. Meals can be edited, added, deleted by doing [Example B]
+
+Step 3: Filters
+The user can apply filters to focus on certain types of meals. For example, whitelisting the [Quick] tag filter will only allow meals with the [Quick] tag to be eligible for roulette selection. There are additional ways to filter that are being added, such as PrepTime to help provide a more granular way of filtering "time" oriented meals. Ingredients are seperate, but for the purposes of filters, they can be used in the same way. Blacklist [Beef] will remove all meals with the [Beef] tag AND all meals with Beef as an ingredient. 
+
+Keep ingredients seperate from [Custom Tags] will allow users to only add [Tags] that are seperate from ingredients and preptime. 
+
+Step 4: Running the Roulette
+Once the filters have been decided upon, clicking the "spin" button will select a meal from the available list. If there is no meals available, an error message will display.
+
+Step 5: Special Overrides
+To help users, its possible to individual select a meal and keep it locked in to the selection regardless of filters, or to "freeze" a meal and keep it out of the selection regardless of filters. This will allow users to edit their meals and organize meals in whatever fashion that best suits them. Rather than needing to edit the meal if they REALLY do not want Tacos, they can just "freeze" them.
+
+Step 6: Wrap-Up
+That concludes the demonstration. Meal Roulette simplifies meal planning by combining customization and randomness to help users choose what to eat without stress.
