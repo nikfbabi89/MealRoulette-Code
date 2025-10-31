@@ -1,0 +1,58 @@
+1. JSON Structure and Consistency
+
+Valid JSON format: Check Correctly structured — no missing commas or brackets.
+Field consistency: Each Meal object includes consistent fields:
+Name, Groups, Status, Visible, PrepTime, CookTime, Ingredients, CustomFilters.
+
+Optional improvement:
+Ensure uniform capitalization in ingredients ("FLour" → "Flour"; "Potatos" → "Potatoes", "Rasins" → "Raisins", "Chedder" → "Cheddar").
+Consistent phrasing for "Salt And Pepper" → "Salt", "Pepper".
+
+Readability: Good indentation and clarity — easy for parsing by your program.
+
+2. Data Quality and Logic
+
+Each meal’s PrepTime + CookTime are realistic values (no negative or missing).
+CustomFilters are logically categorized (Snack, Dessert, Dinner, etc.).
+Status and Visible flags provide control for filtering and GUI visibility — well implemented.
+
+3. Schema Design Fit
+If integrated with your Meal Roulette classes, the data aligns well:
+Meal.Name → unique identifier (good for random selection or search).
+Meal.CustomFilters → supports whitelist/blacklist filtering.
+Meal.Visible → GUI toggling logic ready for integration.
+
+4. Potential Enhancements
+
+Add Meal.Type field or reuse CustomFilters to group by course (e.g., "MealType": "Dinner").
+Add "Origin" (e.g., Dutch, American) for cultural filtering.
+Include "Servings" or "Difficulty" for future expansion.
+Consider normalizing "Groups" to link with User preferences or events.
+
+Integration Testing Plan (Merge + End-to-End)
+1. Pre-Merge Validation
+Branch comparison: Ensure no duplicate or renamed attributes between branches (Meal.Type vs CustomFilters).
+Unit tests:
+test_load_json() – verifies JSON deserializes into Meal objects without exceptions.
+test_meal_visibility() – checks hidden meals don’t appear in roulette results.
+test_filter_logic() – confirm whitelist/blacklist correctly filter CustomFilters.
+
+2. Merge & Run
+
+Merge the feature-json-meals branch into dev or main.
+Resolve conflicts — especially in meal_class.py, load_data.py, or filters.py.
+Re-run existing test suite (pytest or equivalent).
+
+
+3. End-to-End Verification
+Simulate:
+
+Load JSON → confirm meals appear in GUI or CLI list.
+Spin function → returns only "Status": "Active" and "Visible": true meals.
+Apply filters → confirm "Quick" or "Dessert" restricts results accordingly.
+User selection persistence → verify selected meal stores correctly.
+
+4. Regression Check
+No loss of functionality from prior MVP version.
+Confirm no duplicate meal names in loaded data.
+If DB integration exists, ensure JSON imports don’t break schema constraints.
