@@ -21,10 +21,10 @@ class FilterGUI(tk.Frame):
 
         self.Whitelistbox = tk.Listbox(self, width=30, font=Col.Dfu)
         self.Whitelistbox.pack(side='left', fill='y', padx=5)
-        self.Whitelistbox.bind('<ButtonRelease-1>', lambda event: Fotgui.GrabSelection(event, self.Whitelistbox, True))
+        self.Whitelistbox.bind('<ButtonRelease-1>', lambda event: Fotgui.GrabSelection(event, self.Whitelistbox, True, False))
 
         self.Blacklistbox = tk.Listbox(self, width=30, font=Col.Dfu)
         self.Blacklistbox.pack(side='left', fill='y', padx=5)
-        self.Blacklistbox.bind('<ButtonRelease-1>', lambda event: Fotgui.GrabSelection(event, self.Blacklistbox, True))
+        self.Blacklistbox.bind('<ButtonRelease-1>', lambda event: Fotgui.GrabSelection(event, self.Blacklistbox, True, False))
 
         Fotgui.InnitFiltersList(self.Filters)
