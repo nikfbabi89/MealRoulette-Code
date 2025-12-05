@@ -31,6 +31,28 @@ Screenshots Of Program
 <img width="1920" height="1013" alt="Screenshot 2025-11-25 235613" src="https://github.com/user-attachments/assets/021dadb9-032a-4c16-887f-79d1c8a1444a" />
 
 -----------------------------------<br>
+Known Issues:
+Known Issues are documented in the week 09 QA Leftovers. (Indicating leftover bugs and glitches after recent revisions)
+
+"Filtered Meals show up in Selected Meals"
+Using arrow keys does not update the "Info Box"
+Info Box incorrect information *Randomized
+Info Box Misnamed "Id's"
+Info Box Formatting
+Quotations should be removed when possible
+[Brackets] should be 1 per attribute
+Filters are seperate and cumbersome
+Unable to add new meals
+Unable to edit meals
+Unable to delete meals
+Time Filter is not present
+Filters are not re-arrangeable
+Roulette is not showing what meals were available for selection
+Filters tab - Logical error
+Filter can both be a whitelist and blacklist
+
+-----------------------------------<br>
+
 Various features are documented here:<br>
 Instructions are currently provided at the top of the application<br>
 Special note to look at the various "tabs" of the application. To apply filters, go to the filters tab<br>
