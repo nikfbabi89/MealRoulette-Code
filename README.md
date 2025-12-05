@@ -31,25 +31,24 @@ Screenshots Of Program
 <img width="1920" height="1013" alt="Screenshot 2025-11-25 235613" src="https://github.com/user-attachments/assets/021dadb9-032a-4c16-887f-79d1c8a1444a" />
 
 -----------------------------------<br>
-Known Issues:
-Known Issues are documented in the week 09 QA Leftovers. (Indicating leftover bugs and glitches after recent revisions)
+Known Issues:<br>
+Known Issues are documented in the week 09 QA Leftovers. (Indicating leftover bugs and glitches after recent revisions)<br>
 
-"Filtered Meals show up in Selected Meals"
-Using arrow keys does not update the "Info Box"
-Info Box incorrect information *Randomized
-Info Box Misnamed "Id's"
-Info Box Formatting
-Quotations should be removed when possible
-[Brackets] should be 1 per attribute
-Filters are seperate and cumbersome
-Unable to add new meals
-Unable to edit meals
-Unable to delete meals
-Time Filter is not present
-Filters are not re-arrangeable
-Roulette is not showing what meals were available for selection
-Filters tab - Logical error
-Filter can both be a whitelist and blacklist
+"Filtered Meals show up in Selected Meals"<br>
+Using arrow keys does not update the "Info Box"<br>
+Info Box incorrect information *Randomized<br>
+Info Box Misnamed "Id's"<br>
+Info Box Formatting<br>
+Quotations should be removed when possible<br>
+[Brackets] should be 1 per attribute<br>
+Filters are seperate and cumbersome<br>
+Unable to add new meals<br>
+Unable to edit meals<br>
+Unable to delete meals<br>
+Time Filter is not present<br>
+Filters are not re-arrangeable<br>
+Roulette is not showing what meals were available for selection<br>
+Filter can both be a whitelist and blacklist<br>
 
 -----------------------------------<br>
 
