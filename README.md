@@ -6,7 +6,7 @@ About Meal Roulette:<br>
 -----------------------------------<br>
 This is setup instructions for Meal Roulette:<br>
 
-Step 1) Download Project files<br>
+Step 1) Download Project files from Meal Roulette Code Main<br>
 Step 2) Unzip into a folder of your choice. (e.g. C:\Users\Allgood\MCCNH\TechAction 2025)<br>
 
 Do either 3a or 3b<br>
@@ -18,6 +18,17 @@ Step 3b2) Enter terminal command "GUI.Window.mainloop()"<br>
 Note: I am using Jupyter Notebooks so the instructions for other python IDE are minimal<br>
 
 Step 4) The application should be launched. You should see Meal Roulette application with "Meals List" and "Selected Meals" columns. You should also see the tabs "Meals" and "Filters"<br>
+
+-----------------------------------<br>
+Screenshots Of Program
+
+<img width="1914" height="1014" alt="Screenshot 2025-11-25 235502" src="https://github.com/user-attachments/assets/c6f636e9-cb76-40bf-ba52-3568bae51e11" />
+
+<img width="1917" height="1016" alt="Screenshot 2025-11-25 235533" src="https://github.com/user-attachments/assets/2cd7a4f7-af45-4948-adc2-60d9f3bef611" />
+
+<img width="1918" height="1011" alt="Screenshot 2025-11-25 235556" src="https://github.com/user-attachments/assets/463c2b7f-d267-47d6-8ccf-5c00b62f913d" />
+
+<img width="1920" height="1013" alt="Screenshot 2025-11-25 235613" src="https://github.com/user-attachments/assets/021dadb9-032a-4c16-887f-79d1c8a1444a" />
 
 -----------------------------------<br>
 Various features are documented here:<br>
