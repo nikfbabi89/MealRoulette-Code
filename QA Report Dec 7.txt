@@ -1,0 +1,55 @@
+QA Report Nov 7:
+
+Missing Core Features:
+Add Meal (must be done through direct file edit)
+Edit Meal (must be done through direct file edit)
+Delete Meal (must be done through direct file edit)
+
+Missing Core Adjacent Features:
+Info Box scrolling (viewing meals without performing other actions)
+
+Pass:
+Randomize with whitelist: Pass
+Randomize with blacklist: Pass
+Add filter: Pass (note: dynamically added via meal [tag])
+Delete filter: Pass (note: dynamically added via meal [tag])
+Info Box shows meal data: Pass
+Unable to duplicate meals: Pass
+Unable to duplicate whitelist filters: Pass
+Unable to duplicate blacklist filters: Pass
+
+Fail:
+Randomize with no "Selected Meals": Fail
+Randomize with "Selected Meals": Fail
+Reset button: Fail
+Logic handle whitelist/blacklist: Fail
+Infobox Spelling: Fail
+
+
+
+Detailed Failure Report:
+
+1. Randomize with no selection
+Result: Meals are selected
+Expected: Meals are NOT selected as no meals are valid
+Route: Open application, click Randomize button
+
+2. Randomize with selection
+Result: Non-selected meals are ALSO selected
+Expected: Only selected meals are selected
+Route: Open application, add Tacos, randomize
+
+3. Reset button
+Result: Filtered out meals with right-click remain filtered out
+Expected: Filtered out meals are reset to their default state
+Route: Right click Tacos, click reset, click randomize (Tacos will be not be selected)
+
+4. Logic handle whitelist/blacklist
+Result: Whitelist and Blacklist can have the same filter
+Expected: Filter must be removed from whitelist/blacklist before being added to the logical opposite OR moved directly whitelist<->blacklist
+Route: Open application, add whitelist [Quick], add blacklist [Quick], click Randomize
+
+5. Infobox Spelling
+Result: Infobox says "Id's['Lunch','Dinner']['Boil']"
+Expected: Infobox says "Tags: [Lunch][Dinner][Boil]"
+Route: Open application, add Soup (infobox is filled)
