@@ -22,7 +22,7 @@ Note: I am using Jupyter Notebooks so the instructions for other python IDE are 
 _______________________________________________________________________<br>
 
 _______________________________________________________________________<br>
-.exe Execution Method:
+.exe Execution Method:<br>
 Step 1) Download the "Meal Roulette Final" folder and its contents.<br>
 Step 2) Open the folder and click the Driver.exe file. (Maybe you would need to double click, right click and select run, or any other method.)<br>
 _______________________________________________________________________<br>
