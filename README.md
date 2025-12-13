@@ -25,6 +25,8 @@ _______________________________________________________________________<br>
 .exe Execution Method:<br>
 Step 1) Download the "Meal Roulette Final" folder and its contents.<br>
 Step 2) Open the folder and click the Driver.exe file. (Maybe you would need to double click, right click and select run, or any other method.)<br>
+
+It should be noted, that you should not remove any of the contents from the folder once downloaded. It will cause the executable file to fail from missing its dependancies.<br> 
 _______________________________________________________________________<br>
 
 After these steps, the application should be launched. You should see Meal Roulette application with "Meals List" and "Selected Meals" columns. You should also see the tabs "Meals" and "Filters"<br>
