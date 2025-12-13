@@ -5,7 +5,10 @@ About Meal Roulette:<br>
 
 -----------------------------------<br>
 This is setup instructions for Meal Roulette:<br>
+There are two different ways to start up this app. One with the exe and inside a development environment.<br>
 
+_______________________________________________________________________<br>
+Development Environment Method:<br>
 Step 1) Download Project files from Meal Roulette Code Main<br>
 Step 2) Unzip into a folder of your choice. (e.g. C:\Users\Allgood\MCCNH\TechAction 2025)<br>
 
@@ -16,9 +19,15 @@ Step 3a2) Click "run this cell" (play button) [Note: use Kernal - Restart and Ru
 Step 3b1) Use a Python IDE and include all the .py files<br>
 Step 3b2) Enter terminal command "GUI.Window.mainloop()"<br>
 Note: I am using Jupyter Notebooks so the instructions for other python IDE are minimal<br>
+_______________________________________________________________________<br>
 
-Step 4) The application should be launched. You should see Meal Roulette application with "Meals List" and "Selected Meals" columns. You should also see the tabs "Meals" and "Filters"<br>
+_______________________________________________________________________<br>
+.exe Execution Method:
+Step 1) Download the "Meal Roulette Final" folder and its contents.<br>
+Step 2) Open the folder and click the Driver.exe file. (Maybe you would need to double click, right click and select run, or any other method.)<br>
+_______________________________________________________________________<br>
 
+After these steps, the application should be launched. You should see Meal Roulette application with "Meals List" and "Selected Meals" columns. You should also see the tabs "Meals" and "Filters"<br>
 -----------------------------------<br>
 Screenshots Of Program
 
